@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkins2
+  labels:
+    name: jenkins2
+spec:
+  containers:
+    - image: launcher.gcr.io/google/jenkins2
+      name: jenkins

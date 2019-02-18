@@ -1,0 +1,1 @@
+gcloud deploy app app.yml
