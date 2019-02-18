@@ -1,4 +1,6 @@
 echo $FILE_AUTH > auth.json
 
-gcloud auth activate-service-account --key-file auth.json
-gcloud app deploy app.yml --quiet
+
+GOOGLE_APPLICATION_CREDENTIALS=./auth.json
+gcloud auth application-default login
+gcloud app deploy app.yml
