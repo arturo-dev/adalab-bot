@@ -17,5 +17,5 @@ client.on('message', message => {
 client.login(TOKEN);
 
 setInterval(() => {
-  console.log('Keep alive');
-}, 1000);
+  console.log(`Keep alive ${new Date()}`);
+}, 100);
