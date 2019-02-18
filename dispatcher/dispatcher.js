@@ -12,7 +12,7 @@ module.exports = message => {
 
   if (!found) {
     message.channel.send(
-      'Command not found whrite !help to show what commans aree available'
+      'Command not found whrite !help to show what commans are available'
     );
   }
 };
