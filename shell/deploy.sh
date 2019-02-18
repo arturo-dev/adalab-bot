@@ -1,1 +1,3 @@
-gcloud deploy app app.yml
+google/cloud-sdk
+
+gcloud deploy app ../app.yml
