@@ -12,7 +12,8 @@ const MESSAGES_BOT = [
   If you wanna contribute tell it to an admin'
   `,
   'If you are bored do an exercise or learn more',
-  'You can watch and contribute me, my code is on https://github.com/arturo-dev/adalab-bot'
+  'You can watch and contribute me, my code is on https://github.com/arturo-dev/adalab-bot',
+  'Tips and reviews are gratefull acepted'
 ];
 
 client.once('ready', () => {
