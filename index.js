@@ -11,7 +11,7 @@ client.once('ready', () => {
     client.channels
       .get(CHANNEL_GENERAL)
       .send(
-        'Try the ADALAB bot can be helpfull (type !help for available commands), and if you wanna contribute tell to a admin'
+        'Try the ADALAB bot can be helpfull (type !help for available commands), and if you wanna contribute tell to an admin'
       );
   }, 10000000);
 });
