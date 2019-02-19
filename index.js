@@ -31,7 +31,7 @@ client.on('message', message => {
 });
 
 bot.on('guildMemberAdd', member => {
-  member.guild.channels.get(CHANNEL_GENERAL).send(`Welcome Adalabel ${member}`);
+  member.guild.channels.get(CHANNEL_GENERAL).send(`Welcome Adalaber ${member}`);
 });
 
 client.login(TOKEN);
