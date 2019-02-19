@@ -1,6 +1,6 @@
 module.exports = (message, command) => {
   message.channel.send(`
-    Description: ${command.desc}
+    ${message.author}, here are the tips:
     - Search in docs, google example, stackoverflow before ask.
     - Scope the error to locate where is it.
     - Debug might be enabled always.
