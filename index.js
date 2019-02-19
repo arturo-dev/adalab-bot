@@ -9,10 +9,10 @@ client.once('ready', () => {
   setInterval(() => {
     client.channels.get(CHANNEL_GENERAL).send(
       `
-        Try the ADALAB bot can be helpfull (type !help for available commands)
-        Try the Google bot (type g!help for available commands)
-        If you wanna contribute tell it to an admin'
-        `
+      Try the ADALAB bot can be helpfull (type !help for available commands)
+      Try the Google bot (type g!help for available commands)
+      If you wanna contribute tell it to an admin'
+      `
     );
   }, 540000);
 });
