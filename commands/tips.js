@@ -1,6 +1,7 @@
 module.exports = (message, command) => {
   message.channel.send(`
     ${message.author}, here are the tips:
+    - It's better to learn HTML, JS and CSS than a framework. Frameworks are created or modified every day.
     - Search in docs, google example, stackoverflow before ask.
     - Scope the error to locate where is it.
     - Debug might be enabled always.
