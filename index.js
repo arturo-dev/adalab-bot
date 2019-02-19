@@ -13,7 +13,7 @@ client.once('ready', () => {
       .send(
         'Try the ADALAB bot can be helpfull (type !help for available commands), and if you wanna contribute tell to an admin'
       );
-  }, 10000000);
+  }, 540000);
 });
 
 client.on('message', message => {

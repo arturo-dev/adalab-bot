@@ -4,7 +4,8 @@ module.exports = (message, command) => {
     'Make a form ajax and comunicate with https://www.mocky.io/',
     'Take and idea and start it with the UI',
     'Copy a functionality on other framework',
-    "Learn something like you don't know well on https://developer.mozilla.org/es/"
+    "Learn something like you don't know well on https://developer.mozilla.org/es/",
+    'Create an scaffolding'
   ];
   message.author.send(
     `
