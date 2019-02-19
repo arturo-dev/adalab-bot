@@ -1,6 +1,8 @@
 pipeline {
     agent {
-        node: 'google/cloud-sdk'
+        docker { 
+            image: 'google/cloud-sdk'
+        }
     }
 
     stages {
