@@ -30,7 +30,7 @@ client.on('message', message => {
   }
 });
 
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
   member.guild.channels.get(CHANNEL_GENERAL).send(`Welcome Adalaber ${member}`);
 });
 
