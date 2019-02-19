@@ -6,7 +6,6 @@ const CHANNEL_GENERAL = '546693851243479053';
 
 client.once('ready', () => {
   console.log(`Ready ${client.user.username}`);
-
   setInterval(() => {
     client.channels
       .get(CHANNEL_GENERAL)
@@ -18,7 +17,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
   if (message.content.indexOf('!') === 0) {
-    dispatcher(message);
+    dispatcher(message, client);
   }
 });
 
