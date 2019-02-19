@@ -8,5 +8,6 @@ module.exports = (message, command) => {
     - Learn how to works with DevTools (Ex: Google Chorme F12) ¡It's so powerfull!
     - Learn something on material desing. It's googles's UI / UX (https://material.io/)
     - If the framework have a cli, work with it, you where able to be more faster in a future.
+    - If you are stucked, take a coffee, and relax to clear the mind.
 `);
 };
