@@ -2,9 +2,11 @@ module.exports = (message, command) => {
   const exercises = [
     'Copy a small page and validate with https://validator.w3.org/',
     'Make a form ajax and comunicate with https://www.mocky.io/',
-    'Take and idea and start it with the UI'
+    'Take and idea and start it with the UI',
+    'Copy a functionality on other framework',
+    "Learn something like you don't know well on https://developer.mozilla.org/es/"
   ];
-  message.channel.send(
+  message.author.send(
     `
     Here we go:
     ------------------------

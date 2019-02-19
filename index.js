@@ -1,11 +1,19 @@
 const TOKEN = 'NTQ2ODExNjg0NzYxODk0OTMz.D0trLA.CsC4JA9bkKxITCED_yHSdtI1gPg';
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const embed = new Discord.RichEmbed();
 const dispatcher = require('./dispatcher/dispatcher');
+const CHANNEL_GENERAL = '546693851243479053';
 
 client.once('ready', () => {
   console.log(`Ready ${client.user.username}`);
+
+  setInterval(() => {
+    client.channels
+      .get(CHANNEL_GENERAL)
+      .send(
+        'Try the ADALAB bot can bee helpfull (type !help for available commands), and its you wanna contribute tell to a admin'
+      );
+  }, 10000000);
 });
 
 client.on('message', message => {
@@ -15,7 +23,3 @@ client.on('message', message => {
 });
 
 client.login(TOKEN);
-
-setInterval(() => {
-  console.log(`Keep alive ${new Date()}`);
-}, 100);

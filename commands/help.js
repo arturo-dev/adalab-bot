@@ -6,7 +6,7 @@ module.exports = (message, command) => {
     info.push(`- !${commands[i].cmd}: ${commands[i].desc}`);
   }
 
-  message.channel.send(
+  message.user.send(
     `
     Description: ${command.desc}
     Prefix for commands are: !

@@ -1,6 +1,6 @@
-echo $FILE_AUTH > auth.json
+git add .
+git commit -m 'misc changes'
+git push
 
-
-GOOGLE_APPLICATION_CREDENTIALS=./auth.json
-gcloud auth application-default login
-gcloud app deploy app.yml
+#gcloud auth activate-service-account --key-file auth.json
+gcloud app deploy app.yml -q
