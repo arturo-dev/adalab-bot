@@ -2,6 +2,7 @@ const TOKEN = 'NTQ2ODExNjg0NzYxODk0OTMz.D0trLA.CsC4JA9bkKxITCED_yHSdtI1gPg';
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const dispatcher = require('./dispatcher/dispatcher');
+const CHANNEL_GENERAL = '546693851243479053';
 const CHANNEL_BOT = '547413680892149761';
 
 const MESSAGES_BOT = [
@@ -27,6 +28,10 @@ client.on('message', message => {
   if (message.content.indexOf('!') === 0) {
     dispatcher(message, client);
   }
+});
+
+bot.on('guildMemberAdd', member => {
+  member.guild.channels.get(CHANNEL_GENERAL).send(`Welcome Adalabel ${member}`);
 });
 
 client.login(TOKEN);
